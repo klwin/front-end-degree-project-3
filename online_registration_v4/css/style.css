@@ -114,9 +114,10 @@ input::placeholder {
 	text-align: right;
 }
 
-select:focus, input:focus {
+select:focus, input:focus, textarea:focus {
 	outline: none;
-	box-shadow: 0 0 0 1px blue;
+	box-shadow: 0 0 0 2px darkblue;
+	transition: box-shadow 1s;
 }
 
 .classic {
@@ -197,7 +198,7 @@ button {
 	.second {
 		margin-top: 1rem;
 	}
-	
+
 }
 
 
