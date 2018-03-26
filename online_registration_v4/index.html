@@ -4,6 +4,7 @@
 	<title>Online Registration Form</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -22,15 +23,15 @@
 				<legend>Contact Information</legend>
 				<div class="flex-box">
 					<label for="name">Full Name</label>
-					<input required type="text" id="name" name="user-name" placeholder="John Doe">
+					<input required type="text" id="name" name="user-name" placeholder="Required">
 				</div>
 				<div class="flex-box">
 					<label for="email">Email Address</label>
-					<input required type="email" id="email" name="user-email" placeholder="abc@gmail.com">
+					<input required type="email" id="email" name="user-email" placeholder="Required">
 				</div>
 				<div class="flex-box">
 					<label for="phone">Phone Number</label>
-					<input required type="tel" id="phone" name="user-phone" placeholder="123-456-7890" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+					<input required type="tel" id="phone" name="user-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 				</div>
 				<div class="flex-box">
 					<label for="address">Street Address</label>
@@ -51,13 +52,13 @@
 				</div>
 				<div class="flex-box">
 					<label for="zip">Zip Code</label>
-					<input type="number" id="zip" name="user-zip">
+					<input type="text" id="zip" name="user-zip">
 				</div>
 			</fieldset>
 			<div class="line second"></div>
 			<fieldset>
 				<legend>Newsletter</legend>
-				<label>Select the newsletters you would like to recieve</label>
+				<p class="newsletters">Select the newsletters you would like to recieve</p>
 				<input type="checkbox" id="html-news" name="user-news" value="html" checked>
 				<label for="html-news">HTML News</label>
 				<div class="clear"></div>
@@ -67,7 +68,7 @@
 				<input type="checkbox" id="js-news" name="user-news" value="js">
 				<label for="js-news">Javascrip News</label>
 				<div class="clear"></div>
-				<label class="second">Newsletter format</label>
+				<p class="newsletters second">Newsletter format</p>
 				<input type="radio" id="html-format" name="user-format" value="html-format">
 				<label for="html-format">HTML</label>
 				<div class="clear"></div>

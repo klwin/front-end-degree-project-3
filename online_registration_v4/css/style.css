@@ -7,6 +7,7 @@
   	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #333;
+	font-family: 'Rubik', sans-serif;
 }
 
 /*Global CSS */
@@ -17,7 +18,9 @@
 .italic {
 	font-style: italic;
 	text-align: center;
-	margin-bottom: 5rem;
+	color: white;
+	background-color: #333;
+	padding: 3rem 0;
 }
 
 /* Header Css */
@@ -77,6 +80,11 @@ main {
 }
 
 /* Form CSS */
+form {
+	background-color: #E0E0E0;
+	padding: 1rem;
+}
+
 fieldset {
 	border: none;
 }
@@ -99,8 +107,9 @@ input, select {
 	margin-bottom: 1rem;
 }
 
-input[type="text"], input[type="number"], 
-input[type="email"], input[type="tel"],
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
 select, textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -139,10 +148,6 @@ input[id="zip"] {
 	width: 50%;
 }
 
-.second {
-	margin-top: 1rem; 
-}
-
 input[type="checkbox"], input[type="radio"] {
 	float: left;
 	margin-right: 5px;
@@ -161,6 +166,15 @@ button {
 	margin: 2rem 0;
 	color: white;
 	text-align: center;
+}
+
+.newsletters {
+	padding: 0;
+	margin-bottom: 1rem;
+}
+
+.second {
+	margin-top: 1rem;
 }
 
 /* Media Queries (Desktop) */
@@ -182,7 +196,7 @@ button {
 		align-items: center;	
 	}
 
-	label, input, select {
+	label {
 		flex: 1;
 	}
 
@@ -190,13 +204,18 @@ button {
 		flex: 2;
 	}
 
-	input[type="number"] {
-		flex: 0.5; 
-		margin-right: 48%;
-	}
-
 	.second {
 		margin-top: 1rem;
+	}
+
+	input[id="zip"] {
+		flex: 1;
+		margin-right: 30%;
+	}
+
+	.newsletters {
+		margin-right: 0;
+		margin-left: 0;
 	}
 
 }
